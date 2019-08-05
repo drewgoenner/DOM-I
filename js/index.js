@@ -161,7 +161,7 @@ pow.style.color = 'green';
 
 const Nav = document.querySelector('nav');
 Nav.prepend(zoom);
-Nav.append(pow);
+Nav.appendChild(pow);
 
 
 
