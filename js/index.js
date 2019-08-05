@@ -71,6 +71,34 @@ ctaH1.textContent += 'Awesome';
 
 const buttonText = document.querySelector('button');
 buttonText.textContent = siteContent['cta']['button'];
+const bigButton = document.querySelector('button');
+bigButton.addEventListener('click', (event) => {
+  const brokeCtaH1 = document.querySelector('h1');
+  brokeCtaH1.setAttribute('style', 'white-space: pre;');
+  brokeCtaH1.textContent = 'DOOM \r \n';
+  brokeCtaH1.textContent += 'DOOM \r \n';
+  brokeCtaH1.textContent += 'DOOM';
+  const brokeLink = document.querySelectorAll('a');
+  navLink[0].setAttribute ('class', siteContent['nav']['nav-item-1']);
+  navLink[0].text = 'Doom';
+  navLink[0].style.color = 'green';
+  navLink[1].setAttribute ('class', siteContent['nav']['nav-item-2']);
+  navLink[1].text = 'Doom';
+  navLink[1].style.color = 'green';
+  navLink[2].setAttribute ('class', siteContent['nav']['nav-item-3']);
+  navLink[2].text = 'Doom';
+  navLink[2].style.color = 'green';
+  navLink[3].setAttribute ('class', siteContent['nav']['nav-item-4']);
+  navLink[3].text = 'Doom';
+  navLink[3].style.color = 'green';
+  navLink[4].setAttribute ('class', siteContent['nav']['nav-item-5']);
+  navLink[4].text = 'Doom';
+  navLink[4].style.color = 'green';
+  navLink[5].setAttribute ('class', siteContent['nav']['nav-item-6']);
+  navLink[5].textContent = "Doom";
+  navLink[5].style.color = 'green';
+  alert('You broke the p...DOOM DOOM DOOM DOOM DOOM')
+})
 
 const ctaLogo = document.querySelector('#cta-img');
 ctaLogo.setAttribute('src', siteContent['cta']['img-src']);
@@ -134,6 +162,8 @@ pow.style.color = 'green';
 const Nav = document.querySelector('nav');
 Nav.prepend(zoom);
 Nav.append(pow);
+
+
 
 
 
